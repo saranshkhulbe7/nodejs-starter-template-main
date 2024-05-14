@@ -11,7 +11,8 @@ app.use(
 );
 
 app.post("/result", (req, res) => {
-	console.log(req.body);
+	console.log('post body', req.body);
+	console.log(req)
 	console.log("entered post")
 	
 	res.send("Hello World");
