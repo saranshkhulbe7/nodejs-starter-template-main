@@ -12,15 +12,16 @@ app.use(
 
 app.post("/result", (req, res) => {
 	console.log(req.body);
+	console.log(req)
 
 	res.send("Hello World");
 });
 
-app.get("/timeout", (req, res) => {
-	console.log(req.body);
-	console.log(req);
-	res.send("Hello World");
-});
+// app.get("/timeout", (req, res) => {
+// 	console.log(req.body);
+// 	console.log(req);
+// 	res.send("Hello World");
+// });
 
 app.listen(port, (err) => {
 	if (err) {
