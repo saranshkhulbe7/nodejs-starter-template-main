@@ -4,6 +4,8 @@ import { port } from "./config/index.js";
 import cors from "cors";
 const app = express();
 
+console.log("foo-bar")
+
 app.use(
 	cors({
 		origin: "*",
