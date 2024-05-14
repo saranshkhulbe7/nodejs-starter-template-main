@@ -10,7 +10,7 @@ app.use(
 	})
 );
 
-app.get("/result", (req, res) => {
+app.post("/result", (req, res) => {
 	console.log(req.body);
 
 	res.send("Hello World");
