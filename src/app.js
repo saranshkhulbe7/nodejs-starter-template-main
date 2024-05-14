@@ -12,7 +12,7 @@ app.use(
 
 app.get("/result", (req, res) => {
 	console.log(req.body);
-	console.log(req);
+
 	res.send("Hello World");
 });
 
