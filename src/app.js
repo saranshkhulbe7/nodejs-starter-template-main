@@ -4,25 +4,25 @@ import { port } from "./config/index.js";
 import cors from "cors";
 const app = express();
 
-console.log("foobar")
+console.log("foobar");
 
 app.use(
 	cors({
 		origin: "*",
 	})
 );
+app.use(express.json());
 
 app.post("/result", (req, res) => {
-	console.log('post body', req.body);
-	console.log(req)
-	console.log("entered post")
-	
+	console.log("post body", req.body);
+	// console.log(req);
+	console.log("entered post");
+
 	res.send("Hello World");
 });
 // app.get("/result", (req, res) => {
 // 	console.log(req.body);
 // 	console.log("entered get")
-
 
 // 	res.send("Hello World");
 // });
