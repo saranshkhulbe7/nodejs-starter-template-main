@@ -12,7 +12,14 @@ app.use(
 
 app.post("/result", (req, res) => {
 	console.log(req.body);
-	console.log(req)
+	console.log("entered post")
+	
+	res.send("Hello World");
+});
+app.get("/result", (req, res) => {
+	console.log(req.body);
+	console.log("entered get")
+
 
 	res.send("Hello World");
 });
