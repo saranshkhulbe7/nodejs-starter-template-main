@@ -4,7 +4,7 @@ import { port } from "./config/index.js";
 import cors from "cors";
 const app = express();
 
-console.log("foo-bar")
+console.log("foobar")
 
 app.use(
 	cors({
@@ -19,13 +19,13 @@ app.post("/result", (req, res) => {
 	
 	res.send("Hello World");
 });
-app.get("/result", (req, res) => {
-	console.log(req.body);
-	console.log("entered get")
+// app.get("/result", (req, res) => {
+// 	console.log(req.body);
+// 	console.log("entered get")
 
 
-	res.send("Hello World");
-});
+// 	res.send("Hello World");
+// });
 
 // app.get("/timeout", (req, res) => {
 // 	console.log(req.body);
